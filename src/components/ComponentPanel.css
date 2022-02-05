@@ -1,0 +1,10 @@
+.comp-panel{
+    border-right-color: #1976d2;
+    border-right-style: solid;
+    padding: 10px;
+}
+
+.panel-title{
+    margin: 5px;
+    border-bottom-style: solid;
+}

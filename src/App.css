@@ -1,0 +1,21 @@
+.App{
+  height: inherit;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  padding: 10px;
+}
+
+.css-zr39bh-MuiTypography-root-MuiLink-root.material-link{
+  color: white;
+  margin: 5px;
+}
+
+.page-title{
+  display: flex;
+  justify-content: center;
+  border-bottom-color: #1976d2;
+  border-bottom-style: solid;
+}
+
+
