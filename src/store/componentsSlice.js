@@ -29,7 +29,7 @@ export const componentsSlice = createSlice({
 });
 
 export const getComponentById = id => state => {
-    return state.components.componentsList.find(l => l.id === id);
+    return state.components.componentsList.find(currComponent => currComponent.id === id);
 }
 
 export default componentsSlice.reducer;
