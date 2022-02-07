@@ -17,6 +17,14 @@ function App() {
         <Routes>
             <Route path='/' element={<LayoutPage/>} />
             <Route path='/config' element={<ConfigurationPage />} />
+            <Route
+                path="*"
+                element={
+                    <main style={{ padding: "1rem" }}>
+                        <p>This page does not exist!</p>
+                    </main>
+                }
+            />
         </Routes>
     </div>
   );
