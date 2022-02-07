@@ -105,15 +105,15 @@ export const {selectLayout,addChildToLayout} = layoutSlice.actions;
 export const getLayoutsIds = state => {
     const ids = [];
 
-    state.layout.layoutsCatalog.forEach(l => {
-        ids.push(l.id);
+    state.layout.layoutsCatalog.forEach(currLayout => {
+        ids.push(currLayout.id);
     });
 
     return ids;
 }
 
 export const getLayoutById = id => state => {
-    return state.layout.layoutsCatalog.find(l => l.id === id);
+    return state.layout.layoutsCatalog.find(currLayout => currLayout.id === id);
 }
 
 export const getLayoutItemsById = (layoutId) => state => {
@@ -121,7 +121,7 @@ export const getLayoutItemsById = (layoutId) => state => {
 }
 
 export const getLayoutItemsFromCatalogById = (layoutId) => state => {
-    const layoutIndex = state.layout.layoutsCatalog.findIndex(l => l.id === layoutId);
+    const layoutIndex = state.layout.layoutsCatalog.findIndex(currLayout => currLayout.id === layoutId);
     return state.layout.layoutsCatalog[layoutIndex].items;
 }
 
